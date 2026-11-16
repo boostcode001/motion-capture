@@ -1,0 +1,8 @@
+{
+  "project_name": "subject10_pose_action",
+  "pose_model": "yolo11x-pose.pt",
+  "image_size": 960,
+  "person_confidence": 0.25,
+  "keypoint_confidence": 0.50,
+  "device": "auto"
+}
