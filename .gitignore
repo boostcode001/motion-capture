@@ -17,3 +17,16 @@ reports/day03/tables/*.csv
 *.pt
 *.zip
 reports/**/videos/
+
+# day05 generated outputs
+*.MOV
+*.MP4
+*.bak
+*.norot.bak
+reports/day05/**/tables/*.csv
+reports/day05/**/fail/
+reports/day05/**/logs/
+reports/day05/**/lowconf/
+reports/day05/fail/
+reports/day05/logs/
+reports/day05/lowconf/

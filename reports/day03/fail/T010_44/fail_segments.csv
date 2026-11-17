@@ -1,0 +1,5 @@
+﻿segment,start_frame,end_frame,start_sec,end_sec,frames,main_reason,n_no_pose,n_low_conf,n_legs_merged,n_arms_merged,n_bone_abnormal,mid_frame
+1,1,1607,0.0,53.533,1607,low_conf,0,1428,1040,563,784,804
+2,1614,1621,53.767,54.0,8,low_conf,0,6,3,0,0,1618
+3,1629,1646,54.267,54.833,18,bone_abnormal,0,3,0,0,18,1638
+4,1651,1770,55.0,58.967,120,low_conf,1,114,1,22,103,1711

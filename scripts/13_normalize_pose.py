@@ -85,8 +85,9 @@ def parse_args():
             ROOT
             / "data"
             / "day03"
-            / "images"
-            / "arms_up_person_a.jpg"
+            / "my"
+            / "frames"
+            / "frame_0421.jpg"
         ),
     )
 
