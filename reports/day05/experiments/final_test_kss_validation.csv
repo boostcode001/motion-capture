@@ -1,0 +1,5 @@
+feature_set,n_features,val_accuracy,val_macro_f1
+all_38,1140,0.9383,0.9421
+coords_only,1020,0.9259,0.9295
+arms_torso,600,0.9259,0.9227
+arms_only,420,0.9136,0.9116

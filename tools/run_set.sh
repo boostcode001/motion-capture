@@ -9,7 +9,7 @@ cd "$(dirname "$0")/.."
 [ -f .venv/bin/activate ] && source .venv/bin/activate
 
 D="data/day05/$SET"
-OUT="reports/day05/$SET"
+if [ "$SET" = "videos" ]; then OUT="reports/day05"; else OUT="reports/day05/$SET"; fi
 [ -d "$D" ] || { echo "[ERROR] 폴더 없음: $D"; exit 1; }
 mkdir -p "$OUT"/{tables,videos,fail,logs} "$D/_original"
 

@@ -1,7 +1,6 @@
-action_id,action_label,type,video_file,description
-A001,bend_return,dynamic,bend_return.mp4,허리를 앞으로 굽혔다가 다시 똑바로 선다
-A002,leg_raise_lower,dynamic,leg_raise_lower.mp4,한쪽 다리를 들어 올렸다가 다시 내린다
-A003,walk_turn_walk,dynamic,walk_turn_walk.mp4,걷다가 방향을 바꾸고 다시 걷는다
-A004,drink_return,dynamic,drink_return.mp4,음료를 마신 후 다시 정면을 바라본다
-A005,sit_stand,dynamic,sit_stand.mp4,의자에 앉았다가 다시 일어선다
-A006,wave,dynamic,wave.mp4,한 손을 들어 흔들어 인사한다
+action_id,action_label,type,video_file,description,main_joints,course_action_id
+A001,seated_knee_extension,dynamic,A001_kjh1_1.mp4,의자에 앉아 한쪽씩 무릎을 앞으로 쭉 폈다가 내린다,hip|knee|ankle,A002
+A002,shoulder_reach_up_down,dynamic,A002_kjh1_1.mp4,오른팔을 몸 앞쪽으로 머리 위까지 뻗어 올렸다가 내린다,shoulder|elbow|wrist,A006
+A003,foam_roller_hip_hinge,dynamic,A003_kjh1_1.mp4,폼롤러를 허벅지에 대고 허리를 편 채 엉덩이로 숙였다가 올라온다,shoulder|hip|knee,A001
+A009,knee_squeeze_hip_raise,dynamic,A009_kjh1_1.mp4,누운 자세에서 무릎을 모은 채 엉덩이를 들었다가 내린다,shoulder|hip|knee,
+A010,bird_dog,dynamic,A010_kjh1_1.mp4,네발 자세에서 한쪽 팔과 반대쪽 다리를 뻗었다가 돌아온다,shoulder|elbow|wrist|hip,

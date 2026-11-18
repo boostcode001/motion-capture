@@ -30,3 +30,17 @@ reports/day05/**/lowconf/
 reports/day05/fail/
 reports/day05/logs/
 reports/day05/lowconf/
+
+# ---- day05 mocap (2026-11-18) ----
+*.MOV
+*.MP4
+*.bak
+*.bak[0-9]
+*.joblib
+reports/day05/**/tables/*.csv
+reports/day05/**/fail/
+reports/day05/**/fail_v2/
+reports/day05/**/fix_log/
+reports/day05/**/logs/
+reports/day05/**/lowconf/
+reports/day05_prev_*/

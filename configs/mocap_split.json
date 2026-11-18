@@ -1,0 +1,30 @@
+{
+  "sets": [
+    "frontal_videos",
+    "45_videos",
+    "side_videos",
+    "test_data"
+  ],
+  "subject_alias": {
+    "khj1": "kjh1"
+  },
+  "train_subjects": [
+    "kjh1",
+    "kjh2",
+    "kdy"
+  ],
+  "val_subjects": [
+    "ldy"
+  ],
+  "test_subjects": [
+    "kss"
+  ],
+  "qa_rules": {
+    "pose_ratio_min": 0.9,
+    "single_person_ratio_min": 0.9,
+    "mean_keypoint_conf_min": 0.6,
+    "low_kp_frame_ratio_max": 0.6,
+    "low_kp_count": 3,
+    "v2_fail_ratio_max": 1.01
+  }
+}
