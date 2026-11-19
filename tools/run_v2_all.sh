@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # 사용: bash tools/run_v2_all.sh
-cd ~/ai_vision/subject10_pose_action
+cd "$(dirname "$0")/.."
 source .venv/bin/activate 2>/dev/null
 D5=reports/day05
 shopt -s nullglob

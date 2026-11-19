@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import csv
 import sys
+import subprocess
 from pathlib import Path
 
 import cv2
@@ -199,6 +200,15 @@ def main():
     cap.release()
     if writer_video is not None:
         writer_video.release()
+        # mp4v(저화질) → H.264 고화질로 다시 저장
+        tmp = out_video.with_suffix(".tmp.mp4")
+        r = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(out_video),
+                            "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
+                            "-pix_fmt", "yuv420p", str(tmp)])
+        if r.returncode == 0:
+            tmp.replace(out_video)
+        else:
+            print("[WARN] ffmpeg 재인코딩 실패 → mp4v 영상 그대로 사용")
 
     with out_csv.open("w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)

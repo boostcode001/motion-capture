@@ -2,7 +2,7 @@
 # 사용: bash tools/run_rot.sh [SET ...]   (기본: frontal_videos side_videos)
 # 대상: 파일명이 A009 / A010 / T009 / T010 으로 시작하는 mp4
 set -u
-cd ~/ai_vision/subject10_pose_action
+cd "$(dirname "$0")/.."
 source .venv/bin/activate 2>/dev/null
 D5=reports/day05
 SETS="${*:-frontal_videos side_videos}"
